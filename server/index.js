@@ -29,22 +29,41 @@ app.post('/signup', async (req, res) => {
       "INSERT INTO artists (artist_name, years_together, music_type, spotify_link, bandcamp_link, instagram_link, youtube_link, facebook_link, tiktok_link, about_info) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING *",
       [artistName, yearsTogether, musicType, spotifyLink, bandcampLink, instagramLink, youtubeLink, facebookLink, tiktokLink, aboutInfo]);
 
-      res.json(newArtist)
+    res.json(newArtist)
   } catch (err) {
     console.error(err.message);
   }
 });
 
 app.get('/artists', async (req, res) => {
-  try{
+  try {
     const allArtists = await pool.query("SELECT * FROM artists")
     res.json(allArtists);
   } catch (err) {
     console.error(err.message)
   }
-  })
+})
 
-// Update artist 
+app.put('/artist/:id', async (req, res) => {
+  try {
+    const { id } = req.params;
+    const { artistName, yearsTogether, musicType, spotifyLink, bandcampLink, instagramLink, youtubeLink, facebookLink, tiktokLink, aboutInfo } = req.body;
+    const updateArtist = await pool.query("UPDATE artists SET artist_name = $1, years_together = $2, music_type = $3, spotify_link = $4, bandcamp_link = $5, instagram_link =$6, youtube_link = $7, facebook_link = $8, tiktok_link = $9, about_info = $10 WHERE id = $11", [artistName, yearsTogether, musicType, spotifyLink, bandcampLink, instagramLink, youtubeLink, facebookLink, tiktokLink, aboutInfo, id]);
+    res.json("Artist updated")
+  } catch (err) {
+    console.error(err.message)
+  }
+});
 
-// Delete Artist
+
+
+app.delete('/artist/:id', async (req, res) => {
+  try {
+    const { id } = req.params;
+    const deleteArtist = await pool.query("DELETE FROM artists WHERE id = $1", [id])
+    res.json("Artist deleted")
+  } catch (err) {
+    console.error(err.message)
+  }
+});
 
