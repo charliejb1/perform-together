@@ -1,8 +1,23 @@
 import './App.css';
+import Nav from "./components/navigation.jsx"
+import Profile from "./components/profile.jsx"
+import Messages from "./components/messages.jsx"
+import { Routes, Route } from 'react-router-dom';
 
-function App() {
+
+const App = () => {
   return (
-  <h1> Hi </h1>
-)}
+    <>
+    <Nav/>
+  <div>
+    <Routes>
+        <Route path = "/profile" exact component={Profile} />
+        <Route path = "/profile" exact component={Messages} />
+    </Routes>
+  </div>
+  
+  </>
+  )
+}
 
 export default App;
