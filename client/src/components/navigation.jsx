@@ -4,9 +4,12 @@ import { Link, Outlet } from 'react-router-dom';
 function Nav() {
     return (
         <nav>
-            <ul>
-                <li><Link to="/profile">Profile</Link></li>
-                <li><Link to="/messages">Messages</Link></li>
+            <ul id="nav-bar">
+                <li id="signup-button"><Link to="/signup">Sign Up</Link></li>
+                <li id="artist-button"><Link to="/profile">Artist Profile</Link></li>
+                <li id="connect-button"><Link to="/connect">Connect</Link></li>
+                <li id="friends-button"><Link to="/friends">Friends</Link></li>
+                <li id="messages-button"><Link to="/messages">Messages</Link></li>
             </ul>
             <Outlet />
         </nav>
