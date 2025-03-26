@@ -1,0 +1,107 @@
+
+h1 {
+    text-align: center;
+}
+
+
+#sign-up-container {
+    margin-left: 560px;
+    border: solid black 1px;
+    max-width: 815px;
+    border-radius: 20px;
+}
+
+#sign-up{
+    border-bottom: solid black 1px;
+    padding-bottom: 5px;
+}
+
+#who-are-you{
+    text-align: center;
+}
+
+#artist-name{
+    margin-left: 10px;
+}
+
+#years-together{
+    margin-left: 10px;
+}
+
+#music-genre{
+    margin-left: 10px;
+}
+
+#images-header{
+    text-align: center;
+}
+
+#tell-us-more{
+    text-align: center;
+}
+
+#about-us-input{
+    width: 750px;
+    height: 200px;
+    margin-left: 20px;
+}
+
+#links {
+}
+
+
+#links-heading {
+    text-align: center;
+}
+
+#spotify-label{ 
+    margin-left: 40px;
+
+}
+
+#instagram-label{
+    
+}
+
+#tiktok-label{
+    
+}
+
+#youtube-label{
+    
+}
+
+#facebook-label{
+    margin-left: 218px;
+    
+}
+
+#bandcamp-label{
+    
+}
+
+label{
+    
+}
+
+#about-us-input::placeholder{
+
+    
+}
+
+input {
+    margin-left: 5px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#form-submit {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 305px;
+    border-radius: 20px;
+    width: 200px;
+    height: 30px;
+}
+
+
