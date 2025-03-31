@@ -11,6 +11,8 @@ import { faTiktok } from '@fortawesome/free-brands-svg-icons';
 
 
 function Signup() {
+
+    
     // creating separate values of state for each input in form. Basically telling useState to have multiple empty string placeholders than just a regular empty string.
     const emptyInputs = {
         artistName: "",
@@ -33,18 +35,31 @@ function Signup() {
 
     const SubmitArtist = async e => {
         e.preventDefault();
-        console.log(input);
+       
         try {
             const response = await fetch("http://localhost:5001/signup", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(input)
             });
-            console.log(response);
+            
+            window.location.href = "/profile";
         } catch (err) {
             console.error(err.message)
         }
+
+        // try {
+        //     const fetchData = await fetch("http://localhost:5001/artists")
+        //     const jsonArtists = await fetchData.json()
+
+        //     console.log(jsonArtists)
+        // } catch (err) {
+        //     console.error(err.message)
+        // }
+
     }
+
+
 
 return (
     <>
