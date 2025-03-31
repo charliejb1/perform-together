@@ -38,7 +38,7 @@ app.post('/signup', async (req, res) => {
 app.get('/artists', async (req, res) => {
   try {
     const allArtists = await pool.query("SELECT * FROM artists")
-    res.json(allArtists);
+    res.json(allArtists.rows);
   } catch (err) {
     console.error(err.message)
   }
