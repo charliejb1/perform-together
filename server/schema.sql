@@ -13,6 +13,7 @@ CREATE TABLE artists (
     youtube_link VARCHAR(250), 
     facebook_link VARCHAR(250), 
     tiktok_link VARCHAR(250), 
+    website_link VARCHAR(250),
     about_info VARCHAR(1500) 
 );
 

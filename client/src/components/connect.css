@@ -1,0 +1,84 @@
+
+#basics-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 470px;
+    gap: 10px;
+}
+
+#profile-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    border: solid black 1px;
+    border-radius: 20px;
+    margin-left: 470px;
+}
+
+#artist-name{
+    margin-left: 305px;
+}
+
+#social-media{
+    margin-left: 435px;
+    margin-right: 400px;
+    margin-bottom: 0px;
+}
+
+#spotify-image{
+    margin-left: 250px;
+    width: 60px;
+    height: 60px;
+}
+
+#instagram-image{
+    width: 80px;
+    height: 80px;
+    margin-left: -5px;
+}
+
+#tiktok-image{
+    width: 80px;
+    height: 80px;
+    margin-left: -15px;
+}
+
+#youtube-image{
+    width: 100px;
+    height: 100px;
+    margin-left: -25px;
+}
+
+#facebook-image{
+    width: 70px;
+    height: 70px;
+    margin-left: -20px;
+}
+
+#bandcamp-image{
+    margin-right: 3px;
+    width: 60px;
+    height: 60px;
+}
+
+#website-image{
+    width: 60px;
+    height: 60px;
+}
+
+#about-header{
+    margin-left: 450px;
+    padding: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+#about-us{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 0px;
+   
+}
+

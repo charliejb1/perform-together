@@ -24,10 +24,10 @@ app.get('/', (req, res) => {
 // Create artist
 app.post('/signup', async (req, res) => {
   try {
-    const { artistName, yearsTogether, musicGenre, spotifyLink, bandcampLink, instagramLink, youtubeLink, facebookLink, tiktokLink, aboutUs } = req.body;
+    const { artistName, yearsTogether, musicGenre, spotifyLink, bandcampLink, instagramLink, youtubeLink, facebookLink, tiktokLink, websiteLink, aboutUs } = req.body;
     const newArtist = await pool.query(
-      "INSERT INTO artists (artist_name, years_together, music_type, spotify_link, bandcamp_link, instagram_link, youtube_link, facebook_link, tiktok_link, about_info) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING *",
-      [artistName, yearsTogether, musicGenre, spotifyLink, bandcampLink, instagramLink, youtubeLink, facebookLink, tiktokLink, aboutUs]);
+      "INSERT INTO artists (artist_name, years_together, music_type, spotify_link, bandcamp_link, instagram_link, youtube_link, facebook_link, tiktok_link, website_link, about_info) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING *",
+      [artistName, yearsTogether, musicGenre, spotifyLink, bandcampLink, instagramLink, youtubeLink, facebookLink, tiktokLink, websiteLink, aboutUs]);
 
     res.json(newArtist)
   } catch (err) {

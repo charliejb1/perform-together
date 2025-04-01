@@ -24,6 +24,7 @@ function Signup() {
         youtubeLink: "",
         facebookLink: "",
         bandcampLink: "",
+        websiteLink: "",
         aboutUs: ""
     };
 
@@ -113,6 +114,10 @@ return (
 
                     <label id="bandcamp-label"> <FontAwesomeIcon icon={faBandcamp} size="lg" style={{ color: "#02aad4", }}/>
                         <input type="text" name="bandcampLink" value={input.bandcampLink} onChange={handleChange}/>
+                    </label>
+
+                    <label id="website-label"> <FontAwesomeIcon icon={faBandcamp} size="lg" style={{ color: "#02aad4", }}/>
+                        <input type="text" name="websiteLink" value={input.websiteLink} onChange={handleChange}/>
                     </label>
                 </div>
 
