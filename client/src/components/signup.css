@@ -1,10 +1,5 @@
 
 
-h1 {
-    text-align: center;
-}
-
-
 #sign-up-container {
     margin-left: 560px;
     border: solid black 1px;
@@ -15,22 +10,28 @@ h1 {
 #sign-up{
     border-bottom: solid black 1px;
     padding-bottom: 5px;
+    text-align: center;
+    font-family: "Revalia", sans-serif;
 }
 
 #who-are-you{
     text-align: center;
+    font-family: "Revalia", sans-serif;
 }
 
-#artist-name{
-    margin-left: 10px;
+#artist-name-form{
+    margin-left: 30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
-#years-together{
+#years-together-form{
     margin-left: 10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
 #music-genre{
     margin-left: 10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
 #images-header{
@@ -39,6 +40,7 @@ h1 {
 
 #tell-us-more{
     text-align: center;
+    font-family: "Revalia", sans-serif;
 }
 
 #about-us-input{
@@ -53,6 +55,7 @@ h1 {
 
 #links-heading {
     text-align: center;
+    font-family: "Revalia", sans-serif;
 }
 
 #spotify-label{ 
@@ -73,7 +76,7 @@ h1 {
 }
 
 #facebook-label{
-    margin-left: 218px;
+    margin-left: 150px;
     
 }
 

@@ -1,11 +1,9 @@
 import React from "react";
 import { useState, useEffect } from "react"
-import { Link } from 'react-router-dom'
 import "./connect.css"
 
 function Connect() {
 
-    <h1>Connect</h1>
 
     const [artists, setArtist] = useState([]);
 
@@ -31,6 +29,7 @@ function Connect() {
 
     return (
         <>
+            <h1 id="connect-header">Connect</h1>
 
             {artists.map(artist => (
                 <>
@@ -39,9 +38,9 @@ function Connect() {
 
                         <p id="artist-name">{artist.artist_name}</p>
 
-                        <p>Years Together: {artist.years_together}</p>
+                        <p id="years-together">Years Together: {artist.years_together}</p>
 
-                        <p>Genre: {artist.music_type}</p>
+                        <p id="genre">Genre: {artist.music_type}</p>
 
                     </div>
 

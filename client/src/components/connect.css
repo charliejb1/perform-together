@@ -1,10 +1,43 @@
+#connect-header{
+    text-align: center;
+    font-family: "Revalia", sans-serif;
+    margin-bottom: 0px;
+}
 
 #basics-container{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-left: 470px;
-    gap: 10px;
+    justify-content:space-around;
+    align-items: baseline;
+    max-width: 1000px;
+    margin-left: 422px;
+    margin-top: 55px;
+}
+
+#artist-name{
+    font-weight: 800;
+    font-family: "Revalia", sans-serif;
+    font-size: 25px;
+    margin-bottom: 0px ;
+    width: 150px;
+    }
+    
+#years-together{
+margin-left: 0px;
+width: 190px;
+font-family: "Revalia", sans-serif;
+font-weight: 400;
+font-size: 15px;
+
+}
+
+#genre{
+margin-left: -20px;
+width: 100px;
+font-family: "Revalia", sans-serif;
+font-weight: 400;
+font-size: 14px;
 }
 
 #profile-container{
@@ -14,11 +47,7 @@
     max-width: 1000px;
     border: solid black 1px;
     border-radius: 20px;
-    margin-left: 470px;
-}
-
-#artist-name{
-    margin-left: 305px;
+    margin-left: 455px;
 }
 
 #social-media{
@@ -79,6 +108,7 @@
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
    
 }
 
