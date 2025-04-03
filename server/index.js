@@ -54,11 +54,20 @@ app.get('/yourartist', async (req, res) => {
   }
 })
 
-app.put('/artist/:id', async (req, res) => {
+// app.put('/yourartist/:id', async (req, res) => {
+//   try {
+//     const yourArtist = await pool.query("SELECT * FROM artists ORDER BY id DESC LIMIT 1")
+//     res.json(yourArtist.rows);
+//   } catch (err) {
+//     console.error(err.message)
+//   }
+// })
+
+app.put('/yourartist/:id', async (req, res) => {
   try {
     const { id } = req.params;
     const { artistName, yearsTogether, musicType, spotifyLink, bandcampLink, instagramLink, youtubeLink, facebookLink, tiktokLink, websiteLink, aboutInfo, } = req.body;
-    const updateArtist = await pool.query("UPDATE artists SET artist_name = $1, years_together = $2, music_type = $3, spotify_link = $4, bandcamp_link = $5, instagram_link =$6, youtube_link = $7, facebook_link = $8, tiktok_link = $9, website_link = $10 about_info = $11 WHERE id = $12", [artistName, yearsTogether, musicType, spotifyLink, bandcampLink, instagramLink, youtubeLink, facebookLink, tiktokLink, websiteLink, aboutInfo, id]);
+    const updateArtist = await pool.query("UPDATE artists SET artist_name = $1, years_together = $2, music_type = $3, spotify_link = $4, bandcamp_link = $5, instagram_link =$6, youtube_link = $7, facebook_link = $8, tiktok_link = $9, website_link = $10, about_info = $11 WHERE id = $12", [artistName, yearsTogether, musicType, spotifyLink, bandcampLink, instagramLink, youtubeLink, facebookLink, tiktokLink, websiteLink, aboutInfo, id]);
     res.json("Artist updated")
   } catch (err) {
     console.error(err.message)

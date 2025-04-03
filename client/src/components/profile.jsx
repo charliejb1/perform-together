@@ -1,11 +1,12 @@
 import { useEffect, useState} from "react"
 import "./profile.css"
 import React from "react";
-
+import UpdateArtist from "./editProfile"
 
 
 function Profile() {
 
+    
     const [artist, setArtist] = useState([]);
 
     const getArtist = async () => {
@@ -47,6 +48,7 @@ function Profile() {
 
                     <div id="profile-container">
 
+                
                         <h3 id="social-media">Social Media</h3>
 
                         <a href={artist.spotify_link}>< img src='https://storage.googleapis.com/pr-newsroom-wp/1/2023/05/Spotify_Primary_Logo_RGB_Green.png' id="spotify-image" /></a>
@@ -67,6 +69,10 @@ function Profile() {
 
                         <p id="about-us"> {artist.about_info} </p>
 
+                    
+                    </div>
+                    <div>
+                    <UpdateArtist artist={artist}/>
                     </div>
                 </>
             ))}
