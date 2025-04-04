@@ -1,5 +1,6 @@
 import React from "react";
 import {useState, useEffect} from "react"
+import "./editProfile.css"
 
 
 const UpdateArtist = ( {artist} ) => {
@@ -71,9 +72,42 @@ const updateDatabase = async e => {
       <div className="modal-body">Artist Name<input type = "text" value={artistName} onChange={ e => setArtistName(e.target.value)}/>
       </div>
 
+      <div className="modal-body">Years Together<input type = "text" value={yearsTogether} onChange={ e => setYearsTogether(e.target.value)}/>
+      </div>
+
+      <div className="modal-body">Genre<input type = "text" value={musicType} onChange={ e => setMusicType(e.target.value)}/>
+      </div>
+
+      <div className="modal-body">Spotify Link<input type = "text" value={spotifyLink} onChange={ e => setSpotifyLink(e.target.value)}/>
+      </div>
+
+      <div className="modal-body">Instagram Link<input type = "text" value={instagramLink} onChange={ e => setInstagramLink(e.target.value)}/>
+      </div>
+
+      <div className="modal-body">TikTok Link<input type = "text" value={tiktokLink} onChange={ e => setTiktokLink(e.target.value)}/>
+      </div>
+
+      <div className="modal-body">Youtube Link<input type = "text" value={youtubeLink} onChange={ e => setYoutubeLink(e.target.value)}/>
+      </div>
+
+      <div className="modal-body">Facebook Link<input type = "text" value={facebookLink} onChange={ e => setFacebookLink(e.target.value)}/>
+      </div>
+      
+      <div className="modal-body">Bandcamp Link<input type = "text" value={bandcampLink} onChange={ e => setBandcampLink(e.target.value)}/>
+      </div>
+
+      <div className="modal-body">Website Link<input type = "text" value={websiteLink} onChange={ e => setWebsiteLink(e.target.value)}/>
+      </div>
+
+      <div className="modal-body">About Us<input type = "text" value={aboutInfo} onChange={ e => setAboutInfo(e.target.value)}/>
+      </div>
+
+
+
+
   
       <div className="modal-footer">
-      <button type="button" className="btn btn-danger" data-dismiss="modal" onClick={updateDatabase}>Edit</button>
+      <button type="button" className="btn btn-primary" data-dismiss="modal" onClick={updateDatabase}>Save</button>
         <button type="button" className="btn btn-danger" data-dismiss="modal">Close</button>
       </div>
 
